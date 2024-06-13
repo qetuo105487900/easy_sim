@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Sim Arm Driver -->
+  <include file="$(find scara_controller)/launch/scara_arm.launch" />
+
+  <!-- kinematics -->
+  <include file="$(find scara_controller)/launch/test_kinematic.launch" />
+
+</launch>

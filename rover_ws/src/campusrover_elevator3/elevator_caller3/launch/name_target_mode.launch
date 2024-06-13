@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+ 
+  <!-- arm press button -->
+  <node pkg="elevator_caller3" type="name_target_mode" name="name_target_mode" output="screen">
+  </node>
+
+</launch>

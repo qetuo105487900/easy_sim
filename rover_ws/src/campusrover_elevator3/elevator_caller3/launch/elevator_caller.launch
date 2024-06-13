@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="debug" default="false"/>
+
+  <arg name="prefix" default="" unless="$(arg debug)"/>
+  <arg name="prefix" value="gdb -ex run --args" if="$(arg debug)" />
+  
+  <arg name="map_frame_id" default="odom"/>
+  <arg name="panel_dis" default="0.5"/>
+  <arg name="camera_name" default="/rs_d435i/color"/>
+
+  <!-- Elevator State Controller -->
+  <node pkg="elevator_caller3" type="elevator_caller_node" name="elevator_caller_node" output="screen" launch-prefix="$(arg prefix)">
+    <param name="transform_frame_id" value="$(arg map_frame_id)"/>
+    <param name="panel_dis" value="$(arg panel_dis)" />
+    <remap from="/rs_d435i/color/camera_info" to="$(arg camera_name)/camera_info"/>
+  </node>
+</launch>

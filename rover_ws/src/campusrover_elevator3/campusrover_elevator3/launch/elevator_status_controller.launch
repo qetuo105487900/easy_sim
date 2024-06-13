@@ -1,0 +1,75 @@
+<launch>
+    <arg name="debug"               default="false"/>
+    <arg name="bag_filename"        default="$(env HOME)/bags/campusrover_bag/20200704elevator_test_4_180trun.bag"/>
+    <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+    <group if="$(arg debug)">
+
+        <param name="use_sim_time" value="true" />
+        <node name="playbag" pkg="rosbag" type="play"
+                args="--clock $(arg bag_filename)" />
+
+        <param name="robot_description"
+            textfile="$(find campusrover_description)/urdf/campusrover.urdf" />
+
+        <node name="robot_state_publisher" pkg="robot_state_publisher"
+            type="robot_state_publisher" />
+
+
+        <!-- rviz -->
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find campusrover_elevator)/rviz/elevator.rviz" required="true"/>
+
+    </group>
+
+    <!-- run pointcloud_to_laserscan node -->
+    <!-- <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan2">
+
+        <remap from="cloud_in" to="velodyne_points"/>
+        <remap from="scan" to="scan2"/>
+        <rosparam>
+            min_height: -1.0
+            max_height: -0.18
+
+            angle_min: -3.14 # -M_PI/2
+            angle_max: 3.14 # M_PI/2
+            angle_increment: 0.001 # M_PI/360.0
+            scan_time: 0.3333
+            range_min: 0.05
+            range_max: 16.0
+            use_inf: true
+            inf_epsilon: 1.0
+
+            # Concurrency level, affects number of pointclouds queued for processing and number of threads used
+            # 0 : Detect number of cores
+            # 1 : Single threaded
+            # 2->inf : Parallelism level
+            concurrency_level: 1
+        </rosparam>
+
+    </node> -->
+    <!-- <include file="$(find campusrover_sensors)/launch/ira_laser.launch" /> -->
+    
+
+    <node pkg="campusrover_elevator3" type="elevator_status_controller" name="elevator_status_controller" output="screen">
+        <param name="table_y_position_home" value="0.17" />
+        <param name="table_z_position_home" value="0.01" />      
+        <param name="table_y_position_outside" value="0.015" />
+        <param name="table_z_position_outside" value="0.5" />
+        <param name="table_y_position_inside" value="0.015" /><!--itc0.5 chgh0.4-->
+        <param name="table_z_position_inside" value="0.5" /> <!--itc0.33 chgh0.2-->
+        <!-- <param name="arm_table_range_y" value="0.17" /> -->
+    </node>
+
+    <!-- elevator info reader -->
+    <include file="$(find campusrover_elevator3)/launch/elevator_infos_publisher.launch" />
+
+    <!-- elevator door status -->
+    <include file="$(find campusrover_elevator3)/launch/elevator_door_status_any_orientation.launch" />
+
+    <!-- elevator floor status -->
+    <include file="$(find campusrover_elevator3)/launch/elevator_floor_status.launch" />
+
+    <!-- elevator position finder -->
+    <include file="$(find campusrover_elevator3)/launch/elevator_position_finder_line_base.launch" />
+
+</launch>
+

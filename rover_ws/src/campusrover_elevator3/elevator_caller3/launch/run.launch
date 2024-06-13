@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="debug" default="true"/>
+
+  <group if="$(arg debug)">
+    <!-- Laser Merge -->
+    <include file="$(find campusrover_sensors)/launch/ira_laser.launch" />
+  </group>
+
+  <!-- Arm Driver, Kinematics, Arm press button -->
+  <include file="$(find elevator_caller3)/launch/control_real_arm.launch" />
+
+  <!-- Elevator State Controller -->
+  <include file="$(find elevator_caller3)/launch/elevator_caller.launch">
+    <arg name="map_frame_id" default="odom"/>
+    <arg name="panel_dis" default="0.7"/>
+    <arg name="camera_name" default="/zed_node/rgb"/>
+  </include>
+
+  <!-- MPC -->
+  <include file="$(find campusrover_mpc)/launch/mpc_parking_bubble.launch">
+    <arg name="debug" default="$(arg debug)"/>
+  </include>
+
+  <!-- Visual Servo -->
+  <include file="$(find visual_servoing3)/launch/yz_table_pbvs.launch" />
+
+</launch>

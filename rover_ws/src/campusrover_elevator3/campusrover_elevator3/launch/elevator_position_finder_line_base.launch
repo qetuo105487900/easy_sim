@@ -1,0 +1,60 @@
+<launch>
+    <arg name="debug"               default="false"/>
+    <arg name="bag_filename"        default="$(env HOME)/bags/campusrover_bag/elevator/20211116_elevator_outside_move_2.bag"/>
+    <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+    <group if="$(arg debug)">
+
+        <param name="use_sim_time" value="true" />
+        <node name="playbag" pkg="rosbag" type="play"
+                args="--clock -l $(arg bag_filename)" />
+
+        <!-- Static transform -->
+        <include file="$(find campusrover_sensors)/launch/static_transform.launch" />
+
+        <!-- rviz -->
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find campusrover_elevator)/rviz/elevator.rviz" required="true"/>
+
+        <node name="odom_to_tf" pkg="campusrover_driver" type="odom_to_tf" />
+
+        <include file="$(find campusrover_elevator)/launch/laser_line_extraction.launch" />
+
+    </group>
+
+    <node pkg="campusrover_elevator3" type="elevator_position_finder_line_base" name="elevator_position_finder_line_base" output="screen">
+        <param name="odom_frame_" value="odom" />
+        <param name="enable_pose_tracker" value="true" />
+        <param name="elevator_door_depth_default" value="0.29" />
+        <param name="elevator_door_width_default" value="0.8" />
+        <param name="elevator_door_max_size" value="1.3" />
+        <param name="elevator_door_min_size" value="0.8" />
+        <param name="angle_tolerance" value="0.05" />
+    </node>
+
+    <node name="line_extractor_" pkg="laser_line_extraction" type="line_extraction_node">
+        <param name="~frequency" value="30.0" />
+        <!-- <param name="~frame_id" value="hokuyo_link" />
+        <param name="~scan_topic" value="hokuyo_scan" /> -->
+        <!-- <param name="~frame_id" value="ydlidar_front_link" />
+        <param name="~scan_topic" value="scan_front" /> -->
+        <param name="~frame_id" value="base_link" />
+        <param name="~scan_topic" value="scan" />
+        <!-- <param name="~scan_topic" value="velodyne_to_laserscan" /> -->
+        <!-- <param name="~frame_id" value="velodyne_link" />
+        <param name="~scan_topic" value="scan2" /> -->
+        <param name="~publish_markers" value="true" />
+        <param name="~bearing_std_dev" value="1e-5" />
+        <param name="~range_std_dev" value="0.012" />
+        <param name="~least_sq_angle_thresh" value="0.0001" />
+        <param name="~least_sq_radius_thresh" value="0.0001" />
+        <param name="~max_line_gap" value="0.4" />
+        <param name="~min_line_length" value="0.3" />
+        <param name="~min_range" value="0.03" />
+        <param name="~max_range" value="10.0" />
+        <param name="~min_split_dist" value="0.05" />
+        <param name="~outlier_dist" value="0.05" />
+        <param name="~min_line_points" value="4" />
+    </node>
+
+    <!-- <include file="$(find campusrover_sensors)/launch/ira_laser.launch" /> -->
+
+</launch>

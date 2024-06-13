@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+    <include file="$(find elevator_caller3)/launch/remote_elevator_object_detection.launch"/>
+    <include file="$(find campusrover_elevator3)/launch/elevator_status_controller.launch"/>
+    <include file="$(find elevator_caller3)/launch/run.launch" >
+        <arg name="debug" value="false"/>
+    </include>
+
+</launch>

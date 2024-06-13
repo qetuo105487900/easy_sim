@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="campusrover_elevator3" type="elevator_floor_status" name="elevator_floor_status" output="screen">
+        <param name="d_floor_pressure" value="38.0" /> <!--csl55-->
+    </node>
+</launch>
