@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/campusrover_msgs_visualization
+
+Name: campusrover_msgs_visualization
+Description: Description of campusrover_msgs_visualization
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

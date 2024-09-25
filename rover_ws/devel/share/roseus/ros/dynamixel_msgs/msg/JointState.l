@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/dynamixel_msgs/share/roseus/ros/dynamixel_msgs/msg/JointState.l

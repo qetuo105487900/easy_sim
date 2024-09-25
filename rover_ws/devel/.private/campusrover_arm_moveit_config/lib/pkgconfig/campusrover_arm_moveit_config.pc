@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/campusrover_arm_moveit_config
+
+Name: campusrover_arm_moveit_config
+Description: Description of campusrover_arm_moveit_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: moveit_core pluginlib roscpp tf_conversions

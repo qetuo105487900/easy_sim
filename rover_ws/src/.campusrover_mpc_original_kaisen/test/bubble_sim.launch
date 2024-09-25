@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="map_file" default="$(find campusrover_mpc)/map/elevator_0.01.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <node pkg="campusrover_mpc" type="bubble_test" name="bubble_test" output="screen">
+
+  </node>
+</launch>

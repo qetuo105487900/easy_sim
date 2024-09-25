@@ -1,0 +1,2 @@
+campusrover_arm/dynamixel_motor/dynamixel_motor
+/home/lun/rover_ws/devel/.private/dynamixel_motor/cmake.lock /home/lun/rover_ws/devel/./cmake.lock

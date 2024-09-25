@@ -1,0 +1,7 @@
+campusrover_arm/campusrover_vs_strategy
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/cmake.lock /home/lun/rover_ws/devel/./cmake.lock
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/share/campusrover_vs_strategy/cmake/campusrover_vs_strategyConfig-version.cmake /home/lun/rover_ws/devel/share/campusrover_vs_strategy/cmake/campusrover_vs_strategyConfig-version.cmake
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/share/campusrover_vs_strategy/cmake/campusrover_vs_strategyConfig.cmake /home/lun/rover_ws/devel/share/campusrover_vs_strategy/cmake/campusrover_vs_strategyConfig.cmake
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/lib/pkgconfig/campusrover_vs_strategy.pc /home/lun/rover_ws/devel/lib/pkgconfig/campusrover_vs_strategy.pc
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/lib/campusrover_vs_strategy/yz_position_list /home/lun/rover_ws/devel/lib/campusrover_vs_strategy/yz_position_list
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/lib/campusrover_vs_strategy/vs_strategy_node /home/lun/rover_ws/devel/lib/campusrover_vs_strategy/vs_strategy_node

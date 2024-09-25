@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/map_loader
+
+Name: map_loader
+Description: Description of map_loader
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

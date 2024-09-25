@@ -1,0 +1,28 @@
+
+<launch>
+  <arg name="bag_filenames" default="$(env HOME)/outdoor_bag/2022-02-08-19-25-19.bag"/>
+  <arg name="configuration_basenames" default="vlp16_3d_odom_xsens_imu_gps.lua"/>
+
+  <arg name="no_rviz" default="false"/>
+  <arg name="rviz_config" default="$(find cartographer_ros)/configuration_files/demo_2d.rviz"/>
+  <arg name="configuration_directory" default="$(find campusrover_cartographer)/launch/configs"/>
+  <arg name="urdf_filenames" default="$(find campusrover_description)/urdf/campusrover.urdf"/>
+  <arg name="launch_prefix" default=""/>
+
+  <remap from="scan" to="/hokuyo_scan"/>
+  <remap from="scan_1" to="/scan_back"/>
+  <remap from="scan_2" to="/scan_front"/>
+  <remap from="points2" to="/velodyne_points"/>
+  <remap from="imu" to="imu/data" />
+  <remap from="fix" to="/gnss" />
+
+  <include file="$(find cartographer_ros)/launch/offline_node.launch">
+    <arg name="bag_filenames" value="$(arg bag_filenames)"/>
+    <arg name="no_rviz" value="$(arg no_rviz)"/>
+    <arg name="rviz_config" value="$(arg rviz_config)"/>
+    <arg name="configuration_directory" value="$(arg configuration_directory)"/>
+    <arg name="configuration_basenames" value="$(arg configuration_basenames)"/>
+    <arg name="urdf_filenames" value="$(arg urdf_filenames)"/>
+    <arg name="launch_prefix" value="$(arg launch_prefix)"/>
+  </include>
+</launch>

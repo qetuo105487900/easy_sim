@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_networking/share/campusrover_networking/cmake/campusrover_networkingConfig-version.cmake

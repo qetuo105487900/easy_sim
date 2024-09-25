@@ -1,0 +1,44 @@
+<launch>
+  <arg name="map_file_folder"        default="$(env HOME)/campusrover_maps/" />
+  <!-- <arg name="map_file_folder" default="$(env HOME)/bags/campusrover_bag/" /> -->
+  <arg name="map_file"               default="inout.pbstream" />
+  <!-- <arg name="map_file"               default="3F.pbstream" /> -->
+  <!-- <arg name="carto_basename_default" default="vlp16_2d_odom_localization.lua"/> -->
+  <arg name="carto_basename_default" default="charging3d_local.lua"/>
+  <arg name="debug"                  default="false"  />
+  <arg name="bag_file"               default="$(env HOME)/bags/test_bag/orb_5.bag"/>
+  <arg name="viz"                    default="false" />
+
+  <param name="use_sim_time" value="false" />
+  <node if="$(arg viz)" name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/demo_2d.rviz" />
+
+  <node if="$(arg debug)" name="playbag" pkg="rosbag" type="play"
+      args="--clock $(arg bag_file)
+            --rate 1
+            --pause" />
+
+  <param name="robot_description"
+    textfile="$(find campusrover_description)/urdf/tem_campusrover.urdf" />
+  
+  <node pkg="tf" type="static_transform_publisher" name="world_map_broadcaster" args="0 0 0 0 0 0 world map 100" />
+  <!-- 2D 3F map transform-->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="carto_orb_mapBroadcaster" args="-0.014444 0.108170 1.436000 0.057 0 0 map visual_map 100" /> -->
+  <!-- 3D map transform-->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="carto_orb_mapBroadcaster" args="0 0 1.436000 0 0 0 map visual_map 100" />  -->
+  <!-- 3D campusrover map transform -->
+  <node pkg="tf" type="static_transform_publisher" name="carto_orb_mapBroadcaster" args="0.079190 0.011900 0 -0.1 0 0 map visual_map 100" /> 
+
+
+  <!-- <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" /> -->
+
+  <!-- <node pkg="campusrover_driver" type="odom_to_tf" name="odom_to_tf" output="log" respawn="false" respawn_delay="0" /> -->
+
+  <include file="$(find campusrover_cartographer)/launch/tem_localizer.launch.xml">
+    <arg name="carto_basename_default" value="$(arg carto_basename_default)"/>
+    <arg name="map_file_folder" value="$(arg map_file_folder)" />
+    <arg name="map_file" value="$(arg map_file)"/>
+  </include>
+
+</launch>

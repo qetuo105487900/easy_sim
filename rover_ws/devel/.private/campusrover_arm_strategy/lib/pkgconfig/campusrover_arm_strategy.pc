@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/campusrover_arm_strategy
+
+Name: campusrover_arm_strategy
+Description: Description of campusrover_arm_strategy
+Version: 0.0.0
+Cflags: -I/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/include
+Libs: -L${prefix}/lib 
+Requires: 

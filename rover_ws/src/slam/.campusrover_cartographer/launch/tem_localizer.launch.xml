@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="carto_basename_default" default="vlp16_3d_odom_xsens_imu_localization.lua"/>
+    <arg name="map_file_folder" default="$(env HOME)/campusrover_maps/" />
+    <arg name="map_file" default="vlp16_itc/1F.pbstream"/>
+
+    <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" 
+        args="-configuration_directory $(find campusrover_cartographer)/launch/configs
+              -configuration_basename $(arg carto_basename_default)
+              -load_state_filename $(arg map_file_folder)$(arg map_file)
+              -collect-metrics true"
+        output="log">
+    <!-- <remap from="scan" to="/hokuyo_scan"/> -->
+    <remap from="points2" to="/velodyne_points"/> 
+    <!-- <remap from="points2" to="/filtered_cloud"/> -->
+    <remap from="imu" to="imu/filter_data" />
+    <!-- <remap from="fix" to="/gnss"/> -->
+  </node>
+</launch>

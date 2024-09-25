@@ -1,0 +1,11 @@
+[ 17%] Built target lidar_frame_id
+[ 17%] Built target merged_costmap_node
+[ 26%] Built target map_data
+[ 34%] Built target campusrover_local_costmap
+[ 43%] Built target campusrover_global_costmap
+[ 52%] Built target laser_to_pointcloud2
+[ 69%] Built target local_costmap_lib
+[ 69%] Built target portion_costmap_node
+[ 78%] Built target filtered_scan_no_mirror_node
+[ 91%] Built target global_costmap_node
+[100%] Built target local_costmap_node

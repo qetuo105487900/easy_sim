@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="debug" default="true"/>
+
+    <group if="$(arg debug)">
+        <!-- Laser Merge -->
+        <!-- <include file="$(find campusrover_sensors)/launch/ira_laser.launch" /> -->
+
+        <include file="$(find campusrover_costmap)/launch/start_costmap.launch" />
+    </group>
+    
+
+    <node pkg="campusrover_mpc" type="mpc_parking_bubble_node" name="mpc_parking_bubble_node" output="screen">
+        <remap from="mpc_cmd_vel" to="/input/nav_cmd_vel"/>
+        <remap from="odom"    to="/odom"/>
+        <remap from="mpc_goal"    to="/mpc_goal"/>
+        <remap from="costmap" to="/campusrover_local_costmap"/>
+        <param name="odom_frame" type="string" value="odom" />
+    </node>
+
+</launch>

@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_move/share/gennodejs/ros/campusrover_move/srv/_index.js

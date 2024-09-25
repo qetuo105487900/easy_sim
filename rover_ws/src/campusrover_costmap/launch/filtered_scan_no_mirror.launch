@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- velodyne_scan_no_mirror -->
+  <node pkg="campusrover_costmap" type="filtered_scan_no_mirror_node" name="filtered_scan_no_mirror_node" output="screen">
+  </node>
+</launch>

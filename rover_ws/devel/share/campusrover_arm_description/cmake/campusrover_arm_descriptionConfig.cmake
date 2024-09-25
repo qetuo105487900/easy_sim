@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_arm_description/share/campusrover_arm_description/cmake/campusrover_arm_descriptionConfig.cmake

@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/routes_visualization/lib/pkgconfig/routes_visualization.pc

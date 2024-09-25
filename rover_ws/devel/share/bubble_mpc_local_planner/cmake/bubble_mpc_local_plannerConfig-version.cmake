@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/bubble_mpc_local_planner/share/bubble_mpc_local_planner/cmake/bubble_mpc_local_plannerConfig-version.cmake

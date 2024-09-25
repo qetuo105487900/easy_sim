@@ -1,0 +1,19 @@
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _button_recognition_generate_messages_check_deps_recog_result
+[  0%] Built target _button_recognition_generate_messages_check_deps_recognition
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target _button_recognition_generate_messages_check_deps_recog_server
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[ 16%] Built target button_recognition_generate_messages_lisp
+[ 38%] Built target button_recognition_generate_messages_eus
+[ 55%] Built target button_recognition_generate_messages_cpp
+[ 88%] Built target button_recognition_generate_messages_nodejs
+[100%] Built target button_recognition_generate_messages_py
+[100%] Built target button_recognition_generate_messages

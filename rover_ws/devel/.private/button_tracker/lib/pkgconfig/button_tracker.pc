@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/button_tracker
+
+Name: button_tracker
+Description: Description of button_tracker
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

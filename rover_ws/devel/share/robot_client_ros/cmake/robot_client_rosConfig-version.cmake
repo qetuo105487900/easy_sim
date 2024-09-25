@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/robot_client_ros/share/robot_client_ros/cmake/robot_client_rosConfig-version.cmake

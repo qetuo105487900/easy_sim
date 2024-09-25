@@ -1,0 +1,12 @@
+[  4%] [34m[1mAutomatic MOC for target tracked_obstacle_msg_test_node[0m
+[  4%] Built target tracked_obstacle_msg_test_node_autogen
+[  8%] [34m[1mAutomatic MOC for target obstacle_msg_test_node[0m
+[  8%] Built target obstacle_msg_test_node_autogen
+[ 13%] [34m[1mAutomatic MOC for target tracked_obstacle_msg_marker_node[0m
+[ 13%] Built target tracked_obstacle_msg_marker_node_autogen
+[ 17%] [34m[1mAutomatic MOC for target campusrover_msgs_visualization[0m
+[ 17%] Built target campusrover_msgs_visualization_autogen
+[ 30%] Built target tracked_obstacle_msg_test_node
+[ 43%] Built target obstacle_msg_test_node
+[ 56%] Built target tracked_obstacle_msg_marker_node
+[100%] Built target campusrover_msgs_visualization

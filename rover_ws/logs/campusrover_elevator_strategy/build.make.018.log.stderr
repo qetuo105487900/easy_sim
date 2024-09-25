@@ -1,0 +1,22 @@
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:[m[K In function ‘[01m[Kvoid ElevatorStrategyTimer(const ros::TimerEvent&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:774:48:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kcampusrover_msgs::DestinationWithMpc dest[m[K’
+  774 |           campusrover_msgs::DestinationWithMpc [01;31m[Kdest[m[K;
+      |                                                [01;31m[K^~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:762:48:[m[K [01;36m[Knote: [m[K‘[01m[Kcampusrover_msgs::DestinationWithMpc dest[m[K’ previously declared here
+  762 |           campusrover_msgs::DestinationWithMpc [01;36m[Kdest[m[K;
+      |                                                [01;36m[K^~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:797:48:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kcampusrover_msgs::DestinationWithMpc dest[m[K’
+  797 |           campusrover_msgs::DestinationWithMpc [01;31m[Kdest[m[K;
+      |                                                [01;31m[K^~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:785:48:[m[K [01;36m[Knote: [m[K‘[01m[Kcampusrover_msgs::DestinationWithMpc dest[m[K’ previously declared here
+  785 |           campusrover_msgs::DestinationWithMpc [01;36m[Kdest[m[K;
+      |                                                [01;36m[K^~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:822:46:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kcampusrover_msgs::DestinationWithMpc dest[m[K’
+  822 |         campusrover_msgs::DestinationWithMpc [01;31m[Kdest[m[K;
+      |                                              [01;31m[K^~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:810:46:[m[K [01;36m[Knote: [m[K‘[01m[Kcampusrover_msgs::DestinationWithMpc dest[m[K’ previously declared here
+  810 |         campusrover_msgs::DestinationWithMpc [01;36m[Kdest[m[K;
+      |                                              [01;36m[K^~~~[m[K
+make[2]: *** [CMakeFiles/elevator_strategy_controller.dir/build.make:63: CMakeFiles/elevator_strategy_controller.dir/src/elevator_strategy_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1130: CMakeFiles/elevator_strategy_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

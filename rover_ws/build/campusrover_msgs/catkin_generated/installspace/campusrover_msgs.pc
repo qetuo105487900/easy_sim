@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/install
+
+Name: campusrover_msgs
+Description: Description of campusrover_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs geometry_msgs nav_msgs vision_msgs sensor_msgs message_runtime

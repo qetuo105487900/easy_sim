@@ -1,0 +1,5 @@
+campusrover_arm/dynamixel_motor/dynamixel_tutorials
+/home/lun/rover_ws/devel/.private/dynamixel_tutorials/cmake.lock /home/lun/rover_ws/devel/./cmake.lock
+/home/lun/rover_ws/devel/.private/dynamixel_tutorials/share/dynamixel_tutorials/cmake/dynamixel_tutorialsConfig-version.cmake /home/lun/rover_ws/devel/share/dynamixel_tutorials/cmake/dynamixel_tutorialsConfig-version.cmake
+/home/lun/rover_ws/devel/.private/dynamixel_tutorials/share/dynamixel_tutorials/cmake/dynamixel_tutorialsConfig.cmake /home/lun/rover_ws/devel/share/dynamixel_tutorials/cmake/dynamixel_tutorialsConfig.cmake
+/home/lun/rover_ws/devel/.private/dynamixel_tutorials/lib/pkgconfig/dynamixel_tutorials.pc /home/lun/rover_ws/devel/lib/pkgconfig/dynamixel_tutorials.pc

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="map_point" type="camera.py" name="camera_map" />
+
+</launch>

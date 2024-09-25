@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lun/rover_ws/devel/.private/routes_visualization/setup.sh

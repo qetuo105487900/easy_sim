@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/install
+
+Name: campusrover_driver
+Description: Description of campusrover_driver
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp tf message_runtime

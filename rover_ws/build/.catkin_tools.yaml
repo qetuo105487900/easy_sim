@@ -1,0 +1,6 @@
+devel_space: /home/lun/rover_ws/devel
+install: false
+install_space: /home/lun/rover_ws/install
+profile: default
+source_space: /home/lun/rover_ws/src
+workspace: /home/lun/rover_ws

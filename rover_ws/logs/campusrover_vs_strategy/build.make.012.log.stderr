@@ -1,0 +1,229 @@
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kvoid YZGoalCallback(const Point&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:152:63:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  152 |                 table_vel.linear.y = decreaseSpeed([01;31m[Kgoal_error.y[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:174:63:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  174 |                 table_vel.linear.z = decreaseSpeed([01;31m[Kgoal_error.z[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kvoid VSGoalCallback(const PoseStampedConstPtr&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:222:33:[m[K [01;31m[Kerror: [m[K‘[01m[KtfBuffer[m[K’ was not declared in this scope
+  222 |                 transform_c2c = [01;31m[KtfBuffer[m[K.lookupTransform("rs_d435i_color_frame", msg->header.frame_id, ros::Time::now(), ros::Duration(2.0));
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:240:29:[m[K [01;31m[Kerror: [m[K‘[01m[KtfBuffer[m[K’ was not declared in this scope
+  240 |             transform_m2c = [01;31m[KtfBuffer[m[K.lookupTransform("map", "rs_d435i_color_frame", ros::Time::now(), ros::Duration(2));
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:272:66:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >::_pose_type[m[K’ {aka ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >[m[K’} and ‘[01m[Kgeometry_msgs::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::Transform_<std::allocator<void> >[m[K’})
+  272 |             button_target_pose.pose = tf2::toMsg(tf_map_to_button[01;31m[K)[m[K;
+      |                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:42[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Pose_<std::allocator<void> >& geometry_msgs::Pose_<std::allocator<void> >::operator=(const geometry_msgs::Pose_<std::allocator<void> >&)[m[K’
+   24 | struct [01;36m[KPose_[m[K
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::Pose_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Pose_<std::allocator<void> >& geometry_msgs::Pose_<std::allocator<void> >::operator=(geometry_msgs::Pose_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >&&[m[K’
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:308:59:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  308 |             robot_vel.linear.x = decreaseSpeed([01;31m[Kgoal_error.x[m[K);
+      |                                                [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:324:63:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  324 |                 table_vel.linear.y = decreaseSpeed([01;31m[Kgoal_error.y[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:346:63:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  346 |                 table_vel.linear.z = decreaseSpeed([01;31m[Kgoal_error.z[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:373:29:[m[K [01;31m[Kerror: [m[K‘[01m[KtfBuffer[m[K’ was not declared in this scope
+  373 |             transform_m2c = [01;31m[KtfBuffer[m[K.lookupTransform("map", "rs_d435i_color_frame", ros::Time::now(), ros::Duration(2));
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:394:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+  394 |         [01;31m[Ktf[m[K::Quaternion q_current(camera_current_pose.pose.orientation.x, camera_current_pose.pose.orientation.y, camera_current_pose.pose.orientation.z, camera_current_pose.pose.orientation.w);
+      |         [01;31m[K^~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:395:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+  395 |         [01;31m[Ktf[m[K::Quaternion q_target(camera_target_pose.pose.orientation.x, camera_target_pose.pose.orientation.y, camera_target_pose.pose.orientation.z, camera_target_pose.pose.orientation.w);
+      |         [01;31m[K^~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:396:32:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+  396 |         camera_current_theta = [01;31m[Ktf[m[K::getYaw(q_current) ;
+      |                                [01;31m[K^~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:396:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_current[m[K’ was not declared in this scope
+  396 |         camera_current_theta = tf::getYaw([01;31m[Kq_current[m[K) ;
+      |                                           [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:397:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ has not been declared
+  397 |         camera_target_theta = [01;31m[Ktf[m[K::getYaw(q_target) ;
+      |                               [01;31m[K^~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:397:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_target[m[K’ was not declared in this scope
+  397 |         camera_target_theta = tf::getYaw([01;31m[Kq_target[m[K) ;
+      |                                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:421:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krotate_to[m[K’ was not declared in this scope
+  421 |         [01;31m[Krotate_to[m[K(new_current_x, new_current_y, fixed_yaw);
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:446:59:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  446 |             robot_vel.linear.x = decreaseSpeed([01;31m[Kgoal_error.x[m[K);
+      |                                                [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:462:63:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  462 |                 table_vel.linear.y = decreaseSpeed([01;31m[Kgoal_error.y[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:484:63:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  484 |                 table_vel.linear.z = decreaseSpeed([01;31m[Kgoal_error.z[m[K);
+      |                                                    [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:69:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   69 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K At global scope:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:509:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kcampusrover_msgs::VSParameter[m[K’ has not been declared
+  509 | bool EnableVSServiceCallback(campusrover_msgs::[01;31m[KVSParameter[m[K::Request &req, campusrover_msgs::VSParameter::Response &res)
+      |                                                [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:509:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kreq[m[K’ was not declared in this scope
+  509 | bool EnableVSServiceCallback(campusrover_msgs::VSParameter::Request &[01;31m[Kreq[m[K, campusrover_msgs::VSParameter::Response &res)
+      |                                                                      [01;31m[K^~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:509:93:[m[K [01;31m[Kerror: [m[K‘[01m[Kcampusrover_msgs::VSParameter[m[K’ has not been declared
+  509 | bool EnableVSServiceCallback(campusrover_msgs::VSParameter::Request &req, campusrover_msgs::[01;31m[KVSParameter[m[K::Response &res)
+      |                                                                                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:509:116:[m[K [01;31m[Kerror: [m[K‘[01m[Kres[m[K’ was not declared in this scope; did you mean ‘[01m[Kros[m[K’?
+  509 | bool EnableVSServiceCallback(campusrover_msgs::VSParameter::Request &req, campusrover_msgs::VSParameter::Response &[01;31m[Kres[m[K)
+      |                                                                                                                    [01;31m[K^~~[m[K
+      |                                                                                                                    [32m[Kros[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:509:119:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K-fpermissive[m[K]
+  509 | bool EnableVSServiceCallback(campusrover_msgs::VSParameter::Request &req, campusrover_msgs::VSParameter::Response &res[01;31m[K)[m[K
+      |                                                                                                                       [01;31m[K^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kvoid VSStateTimer(const ros::TimerEvent&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:585:5:[m[K [01;31m[Kerror: [m[K‘[01m[KYZFinishPub[m[K’ was not declared in this scope; did you mean ‘[01m[KVSFinishPub[m[K’?
+  585 |     [01;31m[KYZFinishPub[m[K.publish(finish_yz);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KVSFinishPub[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:638:5:[m[K [01;31m[Kerror: [m[K‘[01m[KYZFinishPub[m[K’ was not declared in this scope; did you mean ‘[01m[KVSFinishPub[m[K’?
+  638 |     [01;31m[KYZFinishPub[m[K.publish(finish_yz);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KVSFinishPub[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:727:5:[m[K [01;31m[Kerror: [m[K‘[01m[KYZFinishPub[m[K’ was not declared in this scope; did you mean ‘[01m[KVSFinishPub[m[K’?
+  727 |     [01;31m[KYZFinishPub[m[K = nh.advertise<std_msgs::Bool>("/yz_finish", 10);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[KVSFinishPub[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:732:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGetPointClient[m[K’ was not declared in this scope; did you mean ‘[01m[Kget_point_client[m[K’?
+  732 |     [01;31m[KGetPointClient[m[K = nh.serviceClient<campusrover_msgs::MapPointPose>("/get_point_info");
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+      |     [32m[Kget_point_client[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertiseService(const char [11], bool&)[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;31m[K)[m[K;
+      |                                                                                                   [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), T*)[m[K’
+  879 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), T *obj)
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:879:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), T*)[m[K’
+  924 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), T *obj)
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:924:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), const boost::shared_ptr<X>&)[m[K’
+  970 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), const boost::shared_ptr<T>& obj)
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:970:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(MReq&, MRes&)[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), const boost::shared_ptr<X>&)[m[K’
+ 1017 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), const boost::shared_ptr<T>& obj)
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1017:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (T::*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(MReq&, MRes&))[m[K’
+ 1061 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(MReq&, MRes&))
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1061:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (*)(MReq&, MRes&)[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(ros::ServiceEvent<MReq, MRes>&))[m[K’
+ 1104 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, bool(*srv_func)(ServiceEvent<MReq, MRes>&))
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1104:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kbool (*)(ros::ServiceEvent<MReq, MRes>&)[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(MReq&, MRes&)>&, const VoidConstPtr&)[m[K’
+ 1145 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(MReq&, MRes&)>& callback,
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1145:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(MReq&, MRes&)>[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class S> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(S&)>&, const VoidConstPtr&)[m[K’
+ 1190 |   ServiceServer [01;36m[KadvertiseService[m[K(const std::string& service, const boost::function<bool(S&)>& callback,
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1190:17:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:734:99:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::function<bool(S&)>[m[K’ and ‘[01m[Kbool[m[K’
+  734 |     ros::ServiceServer EnableVSService = nh.advertiseService("/enable_vs", EnableVSServiceCallback[01;36m[K)[m[K;
+      |                                                                                                   [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kros::ServiceServer ros::NodeHandle::advertiseService(ros::AdvertiseServiceOptions&)[m[K’
+ 1222 |   ServiceServer [01;36m[KadvertiseService[m[K(AdvertiseServiceOptions& ops);
+      |                 [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/node_handle.h:1222:17:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = int][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:254:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum(const M&) [with M = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/publisher.h:117:38:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = int][m[K’
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:645:26:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:125:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[K__getMD5Sum[m[K’ in ‘[01m[Km[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  125 |     return [01;31m[Km.__getMD5Sum[m[K().c_str();
+      |            [01;31m[K~~^~~~~~~~~~~[m[K
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value(const M&) [with M = int][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:263:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype(const M&) [with M = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/publisher.h:119:11:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = int][m[K’
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:645:26:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:142:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[K__getDataType[m[K’ in ‘[01m[Km[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  142 |     return [01;31m[Km.__getDataType[m[K().c_str();
+      |            [01;31m[K~~^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/vs_strategy_node.dir/build.make:63: CMakeFiles/vs_strategy_node.dir/src/vs_strategy_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2068: CMakeFiles/vs_strategy_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

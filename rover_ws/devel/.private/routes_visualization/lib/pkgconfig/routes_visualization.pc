@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/routes_visualization
+
+Name: routes_visualization
+Description: Description of routes_visualization
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

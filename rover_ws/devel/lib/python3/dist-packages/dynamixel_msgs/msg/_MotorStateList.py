@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/dynamixel_msgs/lib/python3/dist-packages/dynamixel_msgs/msg/_MotorStateList.py

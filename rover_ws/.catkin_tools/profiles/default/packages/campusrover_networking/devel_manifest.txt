@@ -1,0 +1,7 @@
+campusrover_base/campusrover_networking
+/home/lun/rover_ws/devel/.private/campusrover_networking/cmake.lock /home/lun/rover_ws/devel/./cmake.lock
+/home/lun/rover_ws/devel/.private/campusrover_networking/share/campusrover_networking/cmake/campusrover_networkingConfig-version.cmake /home/lun/rover_ws/devel/share/campusrover_networking/cmake/campusrover_networkingConfig-version.cmake
+/home/lun/rover_ws/devel/.private/campusrover_networking/share/campusrover_networking/cmake/campusrover_networkingConfig.cmake /home/lun/rover_ws/devel/share/campusrover_networking/cmake/campusrover_networkingConfig.cmake
+/home/lun/rover_ws/devel/.private/campusrover_networking/lib/campusrover_networking/cmake.lock /home/lun/rover_ws/devel/lib/campusrover_networking/cmake.lock
+/home/lun/rover_ws/devel/.private/campusrover_networking/lib/campusrover_networking/mapinfo_db_writer.py /home/lun/rover_ws/devel/lib/campusrover_networking/mapinfo_db_writer.py
+/home/lun/rover_ws/devel/.private/campusrover_networking/lib/pkgconfig/campusrover_networking.pc /home/lun/rover_ws/devel/lib/pkgconfig/campusrover_networking.pc

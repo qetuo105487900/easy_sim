@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="map_file" default="/home/campus-rover/campusrover_maps/itc/3F.yaml"/>
+  <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
+
+  <!--<node pkg="rviz" type="rviz" name="rviz" args="-d $(find campusrover_costmap)/rviz/global_costmap.rviz" />-->
+  
+  <node pkg="campusrover_costmap" type="global_costmap_node" name="global_costmap_node" output="screen">
+    <remap from="global_costmap" to="global_costmap"/>
+    <remap from="map" to="map"/>
+    <param name="costmap_resolution" value="0.02"/>
+    <param name="inflation_radius" value="0.05"/>
+    <param name="cost_scaling_factor" value="10"/>
+  </node>
+
+  <node pkg="campusrover_costmap" type="campusrover_global_costmap" name="campusrover_global_costmap" output="screen"/>
+
+</launch>

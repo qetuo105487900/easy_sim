@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="debug" default="false"/>
+  <arg name="verbose" default="false"/>
+
+  <arg name="frame_id" default="odom"/>
+
+  <arg name="odom_topic" default="/odom" unless="$(arg debug)"/>
+  <arg name="goal_topic" default="/mpc_goal" unless="$(arg debug)"/>
+  <arg name="checkpoint_topic" value="/mpc_checkpoint" unless="$(arg debug)" />
+  <arg name="path_topic" default="/path" unless="$(arg debug)"/>
+  <arg name="cur_vel_topic" default="/output/cmd_vel" unless="$(arg debug)"/>
+
+  <arg name="odom_topic" value="/odom_gt" if="$(arg debug)" />
+  <arg name="goal_topic" value="/move_base_simple/goal" if="$(arg debug)" />
+  <arg name="checkpoint_topic" value="/initial_pose" if="$(arg debug)" />
+  <arg name="path_topic" value="/global_path" if="$(arg debug)" />
+  <arg name="cur_vel_topic" value="/input/nav_cmd_vel" if="$(arg debug)" />
+
+  <include file="$(find campusrover_mpc)/launch/laser_extraction.launch" />
+
+  <node pkg="campusrover_mpc" type="mpc_node" name="mpc_node" output="screen">
+    <param name="frame_id" value="$(arg frame_id)"/>
+    <!-- 0: round 1: wall -->
+    <param name="obstacle_mode" value="0"/>
+    <param name="path_mode" value="0"/>
+    <param name="verbose" value="$(arg verbose)"/>
+
+    <remap from="odom" to="$(arg odom_topic)"/>
+    <remap from="goal" to="$(arg goal_topic)"/>
+    <remap from="checkpoint" to="$(arg checkpoint_topic)"/>
+    <remap from="path" to="$(arg path_topic)"/>
+
+    <remap from="/output_vel" to="/input/nav_cmd_vel"/>
+    <remap from="/cur_vel" to="$(arg cur_vel_topic)"/>
+
+    <!-- <remap from="/line_segments" to="/"/> -->
+  </node>
+</launch>

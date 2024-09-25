@@ -1,0 +1,8 @@
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_button.cpp:[m[K In function ‘[01m[Kvoid PressButtonPlanCallback(const PoseStamped&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_button.cpp:248:7:[m[K [01;31m[Kerror: [m[Kcontinue statement not within a loop
+  248 |       [01;31m[Kcontinue[m[K;;
+      |       [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/arm_press_button.dir/build.make:63: CMakeFiles/arm_press_button.dir/src/arm_press_button.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/arm_press_button.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

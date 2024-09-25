@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/button_recognition/share/button_recognition/cmake/button_recognitionConfig.cmake

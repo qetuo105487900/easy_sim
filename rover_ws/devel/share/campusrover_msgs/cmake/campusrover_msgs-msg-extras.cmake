@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_msgs/share/campusrover_msgs/cmake/campusrover_msgs-msg-extras.cmake

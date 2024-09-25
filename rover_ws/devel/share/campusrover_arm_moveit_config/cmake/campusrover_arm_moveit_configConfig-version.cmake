@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_arm_moveit_config/share/campusrover_arm_moveit_config/cmake/campusrover_arm_moveit_configConfig-version.cmake

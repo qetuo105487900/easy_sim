@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_sim_rviz/share/campusrover_sim_rviz/cmake/campusrover_sim_rvizConfig-version.cmake

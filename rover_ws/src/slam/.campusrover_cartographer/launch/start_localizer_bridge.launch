@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="carto_basename_default" default="vlp16_2d_odom_localization.lua"/>
+    <arg name="defult_pbstream_map" default="itc/3F.pbstream"/>
+
+    <node pkg="campusrover_cartographer" type="cartographer_launcher" name="cartographer_launcher_node">
+        <param name="default_map_file" value="$(arg defult_pbstream_map)"/>
+        <param name="carto_basename_default" value="$(arg carto_basename_default)"/>
+    </node>
+
+    <node pkg="campusrover_cartographer" type="cartographer_localizer_bridge_node" name="cartographer_localizer_bridge_node" output="screen">
+        <remap from="init_pose"     to="/initialpose"/>
+        <remap from="working_floor" to="working_floor"/>
+        <param name="map_folder" value="$(env HOME)/campusrover_maps/"/>
+        <param name="carto_configuration_dir" value="$(find campusrover_cartographer)/launch/configs"/>
+        <param name="carto_basename_default" value="$(arg carto_basename_default)"/>
+    </node>
+</launch>

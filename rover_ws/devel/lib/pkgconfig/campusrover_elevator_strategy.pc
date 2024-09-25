@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_elevator_strategy/lib/pkgconfig/campusrover_elevator_strategy.pc

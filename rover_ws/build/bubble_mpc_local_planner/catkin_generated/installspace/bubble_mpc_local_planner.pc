@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/install
+
+Name: bubble_mpc_local_planner
+Description: Description of bubble_mpc_local_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

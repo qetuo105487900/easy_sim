@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find campusrover_costmap)/launch/start_global_costmap.launch" />
+  <include file="$(find campusrover_costmap)/launch/start_local_costmap.launch" />
+  <node pkg="campusrover_costmap" type="map_data" name="map_data" output="screen"/>
+
+  <node pkg="campusrover_costmap" type="keyboard_input.py" name="keyboard_input" output="screen" />
+  <node pkg="campusrover_costmap" type="cursor_marker_and_data.py" name="cursor_marker_and_data" output="screen" />
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find campusrover_costmap)/rviz/map_data.rviz" />
+  
+
+</launch>

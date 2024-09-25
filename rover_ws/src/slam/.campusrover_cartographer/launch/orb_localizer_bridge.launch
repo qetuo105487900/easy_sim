@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="debug" default="true"/>
+    <arg name="carto_basename_default" default="vlp16_2d_odom_localization.lua"/>
+    <arg name="bag_file" default="$(env HOME)/bags/campusrover_bag/20210430_CHGH_B1_01.bag"/>
+    <arg name="defult_pbstream_map" default="itc/3F.pbstream"/>
+    
+
+    <group if="$(arg debug)">
+        <param name="use_sim_time" value="true" />
+        <node name="rviz" pkg="rviz" type="rviz" required="true"
+            args="-d $(find campusrover_cartographer)/rviz/cartographer_2d.rviz" />
+
+        <node name="playbag" pkg="rosbag" type="play"
+            args="--clock $(arg bag_file)" />
+
+        <param name="robot_description"
+        textfile="$(find campusrover_description)/urdf/campusrover.urdf" />
+
+        <node name="robot_state_publisher" pkg="robot_state_publisher"
+        type="robot_state_publisher" />
+
+        <!-- Network DB handler -->
+        <include file = "$(find campusrover_networking)/launch/databased_handler.launch" />
+        <!-- <include file="$(find campusrover_sensors)/launch/ira_laser.launch" /> -->
+    </group>
+    <node pkg="tf" type="static_transform_publisher" name="carto_orb_mapBroadcaster" args="-0.014444 0.108170 1.436000 0.057 0 0 map visual_map 100" />
+
+    <node pkg="campusrover_cartographer" type="cartographer_launcher" name="cartographer_launcher_node">
+        <param name="default_map_file" value="$(arg defult_pbstream_map)"/>
+        <param name="carto_basename_default" value="$(arg carto_basename_default)"/>
+    </node>
+
+    <node pkg="campusrover_cartographer" 
+          type="cartographer_localizer_bridge_node" 
+          name="cartographer_localizer_bridge_node"
+          output="screen">
+        <remap from="init_pose"     to="/initialpose"/>
+        <remap from="working_floor" to="working_floor"/>
+        <param name="map_folder" value="$(env HOME)/campusrover_maps/"/>
+        <param name="carto_configuration_dir" 
+               value="$(find campusrover_cartographer)/launch/configs"/>
+        <param name="carto_basename_default" value="$(arg carto_basename_default)"/>
+    </node>
+</launch>

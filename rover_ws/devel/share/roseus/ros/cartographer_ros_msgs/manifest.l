@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/cartographer_ros_msgs/share/roseus/ros/cartographer_ros_msgs/manifest.l

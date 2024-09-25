@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/install
+
+Name: campusrover_networking
+Description: Description of campusrover_networking
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="map_file_path" default="/home/campus-rover/campusrover_maps/itc/3F.yaml"/>
+
+  <include file="$(find campusrover_costmap)/launch/start_global_costmap.launch" >
+    <param name="map_file" value="$(arg map_file_path)" />
+  </include>
+
+  <include file="$(find campusrover_costmap)/launch/start_local_costmap.launch" />
+
+  <node pkg="campusrover_costmap" type="portion_costmap_node" name="portion_costmap_node" output="screen">
+    <param name="portion_map_width" value="6.0" />
+    <param name="portion_map_height" value="6.0" />
+    <param name="resolution" value="0.02" />
+  </node>
+
+  <node pkg="campusrover_costmap" type="merged_costmap_node" name="merged_costmap_node" output="screen"/>
+
+</launch>
+

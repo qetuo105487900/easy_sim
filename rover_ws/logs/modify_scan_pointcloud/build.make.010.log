@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target remove_portion_pointcloud[0m
+[35m[1mScanning dependencies of target keyboard_call_pointcloud_merger[0m
+[35m[1mScanning dependencies of target call_pointcloud_merger[0m
+[35m[1mScanning dependencies of target pointcloud_merger[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/keyboard_call_pointcloud_merger.dir/src/keyboard_call_pointcloud_merger.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/call_pointcloud_merger.dir/src/call_pointcloud_merger.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/remove_portion_pointcloud.dir/src/remove_portion_pointcloud.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pointcloud_merger.dir/src/pointcloud_merger.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable /home/lun/rover_ws/devel/.private/modify_scan_pointcloud/lib/modify_scan_pointcloud/keyboard_call_pointcloud_merger[0m
+[ 75%] [32m[1mLinking CXX executable /home/lun/rover_ws/devel/.private/modify_scan_pointcloud/lib/modify_scan_pointcloud/call_pointcloud_merger[0m
+[ 75%] Built target keyboard_call_pointcloud_merger
+[ 75%] Built target call_pointcloud_merger
+[ 87%] [32m[1mLinking CXX executable /home/lun/rover_ws/devel/.private/modify_scan_pointcloud/lib/modify_scan_pointcloud/remove_portion_pointcloud[0m
+[100%] [32m[1mLinking CXX executable /home/lun/rover_ws/devel/.private/modify_scan_pointcloud/lib/modify_scan_pointcloud/pointcloud_merger[0m
+[100%] Built target remove_portion_pointcloud
+[100%] Built target pointcloud_merger

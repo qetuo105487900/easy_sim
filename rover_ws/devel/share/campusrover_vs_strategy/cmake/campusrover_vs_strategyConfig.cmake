@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/campusrover_vs_strategy/share/campusrover_vs_strategy/cmake/campusrover_vs_strategyConfig.cmake

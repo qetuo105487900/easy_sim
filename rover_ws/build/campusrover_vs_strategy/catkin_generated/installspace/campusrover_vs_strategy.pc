@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/install
+
+Name: campusrover_vs_strategy
+Description: Description of campusrover_vs_strategy
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

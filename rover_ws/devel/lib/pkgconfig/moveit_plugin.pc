@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/moveit_plugin/lib/pkgconfig/moveit_plugin.pc

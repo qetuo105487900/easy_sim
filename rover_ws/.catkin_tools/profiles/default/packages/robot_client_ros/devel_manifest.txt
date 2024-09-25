@@ -1,0 +1,5 @@
+campusrover_system/robot_client_ros
+/home/lun/rover_ws/devel/.private/robot_client_ros/cmake.lock /home/lun/rover_ws/devel/./cmake.lock
+/home/lun/rover_ws/devel/.private/robot_client_ros/share/robot_client_ros/cmake/robot_client_rosConfig-version.cmake /home/lun/rover_ws/devel/share/robot_client_ros/cmake/robot_client_rosConfig-version.cmake
+/home/lun/rover_ws/devel/.private/robot_client_ros/share/robot_client_ros/cmake/robot_client_rosConfig.cmake /home/lun/rover_ws/devel/share/robot_client_ros/cmake/robot_client_rosConfig.cmake
+/home/lun/rover_ws/devel/.private/robot_client_ros/lib/pkgconfig/robot_client_ros.pc /home/lun/rover_ws/devel/lib/pkgconfig/robot_client_ros.pc

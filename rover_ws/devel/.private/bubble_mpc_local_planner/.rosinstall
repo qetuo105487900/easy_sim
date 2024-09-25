@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lun/rover_ws/devel/.private/bubble_mpc_local_planner/setup.sh

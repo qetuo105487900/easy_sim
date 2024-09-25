@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="map_file" default="/home/lun/rover_ws/src/map_point/map/3F.yaml"/>
+  <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
+
+  <node pkg="map_point" type="map.py" name="map_noddd" />
+  <!-- 進去後 按 2d pose estimate 後框框打一個空格 才會顯示點位-->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d /home/lun/rover_ws/src/map_point/rviz/map.rviz"/>
+</launch>

@@ -1,0 +1,4 @@
+[ 25%] Built target elevator_state_controller
+[100%] Built target elevator_door_controller
+[100%] Built target elevator_strategy_controller
+[100%] Built target elevator_floor_controller

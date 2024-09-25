@@ -1,0 +1,86 @@
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:[m[K In function ‘[01m[Kvoid NameTargetCallback(const String&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:63:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+   63 |   moveit::planning_interface::MoveItErrorCode [01;35m[Kmove_result[m[K = move_group->move();   // 執行移動
+      |                                               [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:[m[K In function ‘[01m[Kvoid PoseTargetCallback(const Pose&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:101:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+  101 |   moveit::planning_interface::MoveItErrorCode [01;35m[Ksuccess[m[K = move_group->plan(plan);
+      |                                               [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:107:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+  107 |     moveit::planning_interface::MoveItErrorCode [01;35m[Kexec_result[m[K = move_group->execute(plan);
+      |                                                 [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:[m[K In function ‘[01m[Kvoid PressButton(const Pose&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:155:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+  155 |   moveit::planning_interface::MoveItErrorCode [01;35m[Ksuccess_plus[m[K = move_group->plan(plan);   // 規劃路徑
+      |                                               [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:158:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+  158 |   moveit::planning_interface::MoveItErrorCode [01;35m[Ksuccess_minus[m[K = move_group->plan(plan);   // 規劃路徑
+      |                                               [01;35m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:174:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+  174 |     moveit::planning_interface::MoveItErrorCode [01;35m[Kexec_result[m[K = move_group->execute(plan); // 執行規劃好的路徑
+      |                                                 [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:1[m[K:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:180:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kname_target[m[K’ was not declared in this scope
+  180 |       ROS_ERROR("[Arm Press Strategy] Press Name Target : Failed to set target: %s", [01;31m[Kname_target[m[K.data.c_str());
+      |                                                                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:351:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+  351 |     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+      |                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:390:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+  390 |       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/ros/console.h:575:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+  575 | #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+      |                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/rosconsole/macros_generated.h:214:24:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+  214 | #define ROS_ERROR(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Error, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+      |                        [01;36m[K^~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:180:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_ERROR[m[K’
+  180 |       [01;36m[KROS_ERROR[m[K("[Arm Press Strategy] Press Name Target : Failed to set target: %s", name_target.data.c_str());
+      |       [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:185:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kusing MoveItErrorCode = class moveit::core::MoveItErrorCode[m[K’ is deprecated: Use moveit::core::MoveItErrorCode [[01;35m[K-Wdeprecated-declarations[m[K]
+  185 |     moveit::planning_interface::MoveItErrorCode [01;35m[Kmove_result[m[K = move_group->move();
+      |                                                 [01;35m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:12[m[K:
+[01m[K/opt/ros/noetic/include/moveit/move_group_interface/move_group_interface.h:64:7:[m[K [01;36m[Knote: [m[Kdeclared here
+   64 | using [01;36m[KMoveItErrorCode[m[K [[deprecated("Use moveit::core::MoveItErrorCode")]] = moveit::core::MoveItErrorCode;
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:[m[K In function ‘[01m[Kvoid PressButtonPlanCallback(const PoseStamped&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_strategy.cpp:246:7:[m[K [01;31m[Kerror: [m[Kcontinue statement not within a loop
+  246 |       [01;31m[Kcontinue[m[K;;
+      |       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_button.cpp:[m[K In function ‘[01m[Kvoid PressButtonPlanCallback(const PoseStamped&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_arm_strategy/src/arm_press_button.cpp:248:7:[m[K [01;31m[Kerror: [m[Kcontinue statement not within a loop
+  248 |       [01;31m[Kcontinue[m[K;;
+      |       [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/arm_press_button.dir/build.make:63: CMakeFiles/arm_press_button.dir/src/arm_press_button.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/arm_press_button.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/arm_press_strategy.dir/build.make:63: CMakeFiles/arm_press_strategy.dir/src/arm_press_strategy.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1912: CMakeFiles/arm_press_strategy.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

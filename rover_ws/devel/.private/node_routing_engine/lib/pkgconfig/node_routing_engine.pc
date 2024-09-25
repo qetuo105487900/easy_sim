@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/node_routing_engine
+
+Name: node_routing_engine
+Description: Description of node_routing_engine
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

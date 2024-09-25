@@ -1,0 +1,110 @@
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kvoid YZGoalCallback(const Point&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:166:42:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  166 |                 decreaseSpeed([01;31m[Kgoal_error.y[m[K);
+      |                               [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:189:42:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  189 |                 decreaseSpeed([01;31m[Kgoal_error.z[m[K);
+      |                               [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kvoid VSGoalCallback(const PoseStampedConstPtr&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:289:66:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kgeometry_msgs::PoseStamped_<std::allocator<void> >::_pose_type[m[K’ {aka ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >[m[K’} and ‘[01m[Kgeometry_msgs::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::Transform_<std::allocator<void> >[m[K’})
+  289 |             button_target_pose.pose = tf2::toMsg(tf_map_to_button[01;31m[K)[m[K;
+      |                                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/noetic/include/geometry_msgs/PoseStamped.h:19[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_datatypes.h:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/time_cache.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/tf.h:44[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf/transform_listener.h:38[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:11[m[K:
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Pose_<std::allocator<void> >& geometry_msgs::Pose_<std::allocator<void> >::operator=(const geometry_msgs::Pose_<std::allocator<void> >&)[m[K’
+   24 | struct [01;36m[KPose_[m[K
+      |        [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kconst geometry_msgs::Pose_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr geometry_msgs::Pose_<std::allocator<void> >& geometry_msgs::Pose_<std::allocator<void> >::operator=(geometry_msgs::Pose_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/geometry_msgs/Pose.h:24:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kgeometry_msgs::Transform[m[K’ {aka ‘[01m[Kgeometry_msgs::Transform_<std::allocator<void> >[m[K’} to ‘[01m[Kgeometry_msgs::Pose_<std::allocator<void> >&&[m[K’
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:309:102:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+  309 |         camera_target_pose.pose.position.x = button_target_pose.pose.position.x + offset_transformed.[01;31m[K.[m[Kx();
+      |                                                                                                      [01;31m[K^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:310:102:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+  310 |         camera_target_pose.pose.position.y = button_target_pose.pose.position.y + offset_transformed.[01;31m[K.[m[Ky();
+      |                                                                                                      [01;31m[K^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:311:102:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K.[m[K’ token
+  311 |         camera_target_pose.pose.position.z = button_target_pose.pose.position.z + offset_transformed.[01;31m[K.[m[Kz();
+      |                                                                                                      [01;31m[K^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:325:38:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  325 |             decreaseSpeed([01;31m[Kgoal_error.x[m[K);
+      |                           [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:342:42:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  342 |                 decreaseSpeed([01;31m[Kgoal_error.y[m[K);
+      |                               [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:365:42:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  365 |                 decreaseSpeed([01;31m[Kgoal_error.z[m[K);
+      |                               [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:466:38:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  466 |             decreaseSpeed([01;31m[Kgoal_error.x[m[K);
+      |                           [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:483:42:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  483 |                 decreaseSpeed([01;31m[Kgoal_error.y[m[K);
+      |                               [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:506:42:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kfloat&[m[K’ to an rvalue of type ‘[01m[Kfloat[m[K’
+  506 |                 decreaseSpeed([01;31m[Kgoal_error.z[m[K);
+      |                               [01;31m[K~~~~~~~~~~~^[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:84:27:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid decreaseSpeed(float&)[m[K’
+   84 | void decreaseSpeed([01;36m[Kfloat &value[m[K)
+      |                    [01;36m[K~~~~~~~^~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:[m[K In function ‘[01m[Kbool EnableVSServiceCallback(campusrover_msgs::VSParameter::Request&, campusrover_msgs::VSParameter::Response&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:545:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_point_client[m[K’ was not declared in this scope; did you mean ‘[01m[KGetPointClient[m[K’?
+  545 |         if ([01;31m[Kget_point_client[m[K.call(srv))
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |             [32m[KGetPointClient[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:569:106:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Vector3[m[K’ has no member named ‘[01m[KgetOrigin[m[K’
+  569 |             camera_target_pose.pose.position.x = button_target_pose.pose.position.x + offset_transformed.[01;31m[KgetOrigin[m[K().x();
+      |                                                                                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:570:106:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Vector3[m[K’ has no member named ‘[01m[KgetOrigin[m[K’
+  570 |             camera_target_pose.pose.position.y = button_target_pose.pose.position.y + offset_transformed.[01;31m[KgetOrigin[m[K().y();
+      |                                                                                                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:571:106:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass tf2::Vector3[m[K’ has no member named ‘[01m[KgetOrigin[m[K’
+  571 |             camera_target_pose.pose.position.z = button_target_pose.pose.position.z + offset_transformed.[01;31m[KgetOrigin[m[K().z();
+      |                                                                                                          [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:8[m[K:
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::MD5Sum<M>::value(const M&) [with M = int][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:254:102:[m[K   required from ‘[01m[Kconst char* ros::message_traits::md5sum(const M&) [with M = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/publisher.h:117:38:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = int][m[K’
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:671:26:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:125:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[K__getMD5Sum[m[K’ in ‘[01m[Km[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  125 |     return [01;31m[Km.__getMD5Sum[m[K().c_str();
+      |            [01;31m[K~~^~~~~~~~~~~[m[K
+/opt/ros/noetic/include/ros/message_traits.h: In instantiation of ‘[01m[Kstatic const char* ros::message_traits::DataType<M>::value(const M&) [with M = int][m[K’:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:263:104:[m[K   required from ‘[01m[Kconst char* ros::message_traits::datatype(const M&) [with M = int][m[K’
+[01m[K/opt/ros/noetic/include/ros/publisher.h:119:11:[m[K   required from ‘[01m[Kvoid ros::Publisher::publish(const M&) const [with M = int][m[K’
+[01m[K/home/lun/rover_ws/src/campusrover_arm/campusrover_vs_strategy/src/vs_strategy_node.cpp:671:26:[m[K   required from here
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:142:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[K__getDataType[m[K’ in ‘[01m[Km[m[K’, which is of non-class type ‘[01m[Kconst int[m[K’
+  142 |     return [01;31m[Km.__getDataType[m[K().c_str();
+      |            [01;31m[K~~^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/vs_strategy_node.dir/build.make:63: CMakeFiles/vs_strategy_node.dir/src/vs_strategy_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2068: CMakeFiles/vs_strategy_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

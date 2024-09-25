@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/lun/rover_ws/devel/.private/map_loader/setup.sh

@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <!-- elevator_info_publisher -->
-    <node pkg="campusrover_elevator3" type="elevator_info_reader" name="elevator_info_reader" output="screen">
-        <param name="config_file" value="$(find campusrover_elevator3)"/>
-    </node>
-</launch>

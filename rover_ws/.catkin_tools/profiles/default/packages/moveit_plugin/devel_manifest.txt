@@ -1,0 +1,5 @@
+campusrover_arm/moveit_plugin
+/home/lun/rover_ws/devel/.private/moveit_plugin/cmake.lock /home/lun/rover_ws/devel/./cmake.lock
+/home/lun/rover_ws/devel/.private/moveit_plugin/share/moveit_plugin/cmake/moveit_pluginConfig-version.cmake /home/lun/rover_ws/devel/share/moveit_plugin/cmake/moveit_pluginConfig-version.cmake
+/home/lun/rover_ws/devel/.private/moveit_plugin/share/moveit_plugin/cmake/moveit_pluginConfig.cmake /home/lun/rover_ws/devel/share/moveit_plugin/cmake/moveit_pluginConfig.cmake
+/home/lun/rover_ws/devel/.private/moveit_plugin/lib/pkgconfig/moveit_plugin.pc /home/lun/rover_ws/devel/lib/pkgconfig/moveit_plugin.pc

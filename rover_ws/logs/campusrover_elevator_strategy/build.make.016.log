@@ -1,0 +1,7 @@
+[ 50%] Built target elevator_state_controller
+[ 50%] Built target elevator_floor_controller
+[35m[1mScanning dependencies of target elevator_strategy_controller[0m
+[ 75%] Built target elevator_door_controller
+[ 87%] [32mBuilding CXX object CMakeFiles/elevator_strategy_controller.dir/src/elevator_strategy_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/lun/rover_ws/devel/.private/campusrover_elevator_strategy/lib/campusrover_elevator_strategy/elevator_strategy_controller[0m
+[100%] Built target elevator_strategy_controller

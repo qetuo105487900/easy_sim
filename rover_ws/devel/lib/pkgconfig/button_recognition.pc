@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/button_recognition/lib/pkgconfig/button_recognition.pc

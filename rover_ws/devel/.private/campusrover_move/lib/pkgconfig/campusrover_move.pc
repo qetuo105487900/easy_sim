@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/campusrover_move
+
+Name: campusrover_move
+Description: Description of campusrover_move
+Version: 0.0.0
+Cflags: -I/home/lun/rover_ws/devel/.private/campusrover_move/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs geometry_msgs nav_msgs message_runtime

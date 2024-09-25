@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/node_routing_engine/lib/pkgconfig/node_routing_engine.pc

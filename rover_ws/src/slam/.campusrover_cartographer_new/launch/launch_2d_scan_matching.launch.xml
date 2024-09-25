@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="carto_basename_default" default="yd_odom_localization.lua"/>
+    <arg name="map_file_default" default="$(env HOME)/campusrover_maps/itc/3F.pbstream" />
+
+    <node name="cartographer_node" pkg="cartographer_ros" type="cartographer_node" 
+        args="-configuration_directory $(find campusrover_cartographer)/launch/configs
+              -configuration_basename $(arg carto_basename_default)"
+        output="log">
+    <remap from="scan" to="/scan_front"/>
+    <remap from="points2" to="/velodyne_points"/>
+    <remap from="imu" to="imu/data" />
+  </node>
+</launch>

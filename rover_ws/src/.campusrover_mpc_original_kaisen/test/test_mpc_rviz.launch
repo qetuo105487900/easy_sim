@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="map_file" default="$(find campusrover_mpc)/map/elevator_0.01.yaml"/>
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+    <include file="$(find campusrover_sim_rviz)/launch/twist_odom_simulator.launch">
+        <!-- <arg name="model"       value="$(find campusrover_description)/robots/campusrover.urdf"/> -->
+        <arg name="rvizconfig"  value="$(find campusrover_mpc)/rviz/test_arcados_mpc.rviz" />
+        <arg name="publish_tf"  value="true"/>
+    </include>
+
+    <node pkg="campusrover_mpc" type="test_mpc_rviz_node" name="test_mpc_rviz_node" output="screen">
+        <remap from="cmd_vel" to="/input/nav_cmd_vel"/>
+        <remap from="odom"    to="/odom_gt"/>
+        <remap from="goal"    to="/move_base_simple/goal"/>
+        <remap from="costmap" to="map"/>
+        
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="base_footprint_base_link" args="0 0 0.13 0 0 0 1 base_footprint base_link 100" />
+    <node pkg="tf" type="static_transform_publisher" name="map_odom_link" args="0 0 0 0 0 0 1 map odom 100" />
+
+    <node pkg="campusrover_mpc" type="obstacle_marker" name="obstacle_marker_node">
+        <param name="obstacle_x" type="int" value="0" />
+        <param name="obstacle_y" type="int" value="-1" />
+    </node>
+        
+</launch>

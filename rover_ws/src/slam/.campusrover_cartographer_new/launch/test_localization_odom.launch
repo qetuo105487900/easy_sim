@@ -1,0 +1,33 @@
+<launch>
+  <arg name="map_file_folder" default="$(env HOME)/campusrover_maps/" />
+  <!-- <arg name="map_file_folder" default="$(env HOME)/bags/campusrover_bag/" /> -->
+  <arg name="map_file" default="10-2022-02-08-19-25-19.bag.pbstream" />
+  <arg name="carto_basename_default" default="vlp16_3d_odom_xsens_imu_gps_localization.lua"/>
+
+  <arg name="bag_file" default="$(env HOME)/outdoor_bag/2022-03-01-13-09-18.bag"/>
+  <arg name="viz" default="true" />
+
+  <param name="use_sim_time" value="true" />
+  <node if="$(arg viz)" name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/demo_2d.rviz" />
+
+  <node name="playbag" pkg="rosbag" type="play"
+      args="--clock $(arg bag_file)" />
+
+  <param name="robot_description"
+    textfile="$(find campusrover_description)/urdf/campusrover.urdf" />
+  
+  <node pkg="tf" type="static_transform_publisher" name="world_map_broadcaster" args="0 0 0 0 0 0 world map 100" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+
+  <node pkg="campusrover_driver" type="odom_to_tf" name="odom_to_tf" output="log" respawn="false" respawn_delay="0" />
+
+  <include file="$(find campusrover_cartographer)/launch/launch_localizer.launch.xml">
+    <arg name="carto_basename_default" value="$(arg carto_basename_default)"/>
+    <arg name="map_file_folder" value="$(arg map_file_folder)" />
+    <arg name="map_file" value="$(arg map_file)"/>
+  </include>
+
+</launch>

@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/lidar_camera_calibration/lib/pkgconfig/lidar_camera_calibration.pc

@@ -1,0 +1,6 @@
+[  0%] Built target campusrover_msgs_generate_messages_cpp
+[ 20%] Built target node_connection_lib
+[ 60%] Built target module_linkage_lib
+[ 60%] Built target routing_engine_lib
+[ 80%] Built target g_test
+[100%] Built target routing_engine_node

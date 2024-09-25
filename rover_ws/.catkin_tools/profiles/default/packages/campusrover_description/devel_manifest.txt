@@ -1,0 +1,5 @@
+campusrover_base/campusrover_description
+/home/lun/rover_ws/devel/.private/campusrover_description/cmake.lock /home/lun/rover_ws/devel/./cmake.lock
+/home/lun/rover_ws/devel/.private/campusrover_description/share/campusrover_description/cmake/campusrover_descriptionConfig.cmake /home/lun/rover_ws/devel/share/campusrover_description/cmake/campusrover_descriptionConfig.cmake
+/home/lun/rover_ws/devel/.private/campusrover_description/share/campusrover_description/cmake/campusrover_descriptionConfig-version.cmake /home/lun/rover_ws/devel/share/campusrover_description/cmake/campusrover_descriptionConfig-version.cmake
+/home/lun/rover_ws/devel/.private/campusrover_description/lib/pkgconfig/campusrover_description.pc /home/lun/rover_ws/devel/lib/pkgconfig/campusrover_description.pc

@@ -1,0 +1,8 @@
+prefix=/home/lun/rover_ws/devel/.private/campusrover_sim_rviz
+
+Name: campusrover_sim_rviz
+Description: Description of campusrover_sim_rviz
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

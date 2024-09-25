@@ -1,0 +1,1 @@
+/home/lun/rover_ws/devel/.private/bubble_mpc_local_planner/lib/pkgconfig/bubble_mpc_local_planner.pc

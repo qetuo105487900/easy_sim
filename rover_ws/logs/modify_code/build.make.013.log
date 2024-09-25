@@ -1,0 +1,5 @@
+[ 80%] Built target pointcloud_info
+[ 80%] Built target record_speed
+[ 80%] Built target keyboard_call_scan_velodyne
+[ 80%] Built target client_call_scan_velodyne
+[100%] Built target copy_scan_velodyne

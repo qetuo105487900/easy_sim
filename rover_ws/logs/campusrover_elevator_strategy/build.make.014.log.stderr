@@ -1,0 +1,36 @@
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:[m[K In function ‘[01m[Kvoid ElevatorStrategyTimer(const ros::TimerEvent&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:311:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  311 |       if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:521:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  521 |           if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:547:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  547 |           if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:573:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  573 |         if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:676:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  676 |           if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:689:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  689 |           if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:703:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  703 |         if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:726:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+  726 |         if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:[m[K In function ‘[01m[Kbool ControlServiceCallback(campusrover_msgs::ElevatorControlInterface::Request&, campusrover_msgs::ElevatorControlInterface::Response&)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:1231:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+ 1231 |     if ([01;31m[Kget_yz_position_client_[m[K.call(yz_position_srv))
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lun/rover_ws/src/campusrover_elevator_3/campusrover_elevator_strategy/src/elevator_strategy_controller.cpp:1308:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_yz_position_client_[m[K’ was not declared in this scope
+ 1308 |   [01;31m[Kget_yz_position_client_[m[K  = nh.serviceClient<campusrover_msgs::YZPosition>("/get_yz_position");
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/elevator_strategy_controller.dir/build.make:63: CMakeFiles/elevator_strategy_controller.dir/src/elevator_strategy_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1130: CMakeFiles/elevator_strategy_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
