@@ -1,0 +1,25 @@
+<launch>
+  
+  <node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node" output="screen" />
+
+  <node pkg="easy_sim" type="turtlesim_to_map" name="turtlesim_to_map" output="screen" />
+
+  <node pkg="easy_sim" type="robot_marker" name="robot_marker" output="screen" />
+
+  <!-- <node pkg="campusrover_costmap" type="generated_path" name="generated_path" output="screen" /> -->
+  <!-- <node pkg="campusrover_costmap" type="generated_mpc_goal" name="generated_mpc_goal" output="screen" /> -->
+  <node pkg="campusrover_costmap" type="generated_mpc_goal_ori" name="generated_mpc_goal_ori" output="screen" />
+
+  <!-- <node pkg="campusrover_costmap" type="generated_insert_mpc_goal" name="generated_insert_mpc_goal" output="screen" /> -->
+
+  <node pkg="campusrover_costmap" type="generated_sim_odom" name="generated_sim_odom" output="screen" />
+
+  <node pkg="campusrover_costmap" type="sim_dynamic_costmap" name="sim_dynamic_costmap" output="screen" />
+  <!-- <node pkg="campusrover_costmap" type="sim_static_costmap" name="sim_static_costmap" output="screen" /> -->
+  <!-- <node pkg="campusrover_costmap" type="sim_no_obstacle_costmap" name="sim_no_obstacle_costmap" output="screen" /> -->
+
+  <!-- <node pkg="campusrover_costmap" type="dikstkra_path" name="dikstkra_path" output="screen" /> -->
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d /home/lun/spot_ws/src/easy_sim/rviz/sim.rviz" output="screen"/>
+
+</launch>
